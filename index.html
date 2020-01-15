@@ -1,8 +1,10 @@
 <!doctype html>
 <html>
 <head>
-	<title>Live input effects</title>
-    <ascript src="http://cwilso.github.io/AudioContext-MonkeyPatch/AudioContextMonkeyPatch.js"></ascript>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet" />
+	
+    <ascript src="https://cwilso.github.io/AudioContext-MonkeyPatch/AudioContextMonkeyPatch.js"></ascript>
 
 	<script src="js/effect.js"></script>
 	<script src="js/waveshaper.js"></script>
@@ -26,9 +28,9 @@
 	<script src="js/visualizer/shader.js"></script>
 
 	<style>
-	body { font: 14pt Arial, sans-serif; background: #333; color: gray; }
-	select { font: 14pt Arial, sans-serif; }
-	div#controls div { display:none; border: 1px solid darkgray; border-radius: 5px; padding: 10px; width: 728px;}
+	body { font: 16pt Audiowide, sans-serif; background: #000; color: white; }
+	select { font: 16pt Audiowide, sans-serif; }
+	div#controls div { display:none; border: 2px solid red; border-radius: 5px; padding: 10px; width: 728px;}
 	div#controls div.display { display: block; }
 	#controls { padding-top: 24px;}
 	#effectMix { padding-top: 12px;}
@@ -198,20 +200,6 @@ onInput="crossfade( event.target.value );">
       <button onclick="this.innerText = toggleSample();">play</button>
   -->
 </div>
-  <a href="https://github.com/cwilso/Audio-Input-Effects" style="position: absolute; z-index:2; top: 0; right: 0; border: 0;"><img src="img/forkme.png" alt="Fork me on GitHub"></a>
-
-<script type="text/javascript">
-
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-35593052-1']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-</script>
+ 
 </body>
 </html>
